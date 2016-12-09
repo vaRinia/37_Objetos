@@ -55,7 +55,8 @@ fac.imprimir ();
 ----------------------
 //Ejercicio #2 Cuatrimestre actual
 
-//Confeccionar un programa que muestre en que cuatrimestre del año nos encontramos. Para esto será necesario que el usuario ingrese el mes actual
+//Confeccionar un programa que muestre en que cuatrimestre del año nos encontramos. 
+//Para esto será necesario que el usuario ingrese el mes actual
 
 ------------------------
 //Ejercicio #3 Valor futuro de una inversión
@@ -73,32 +74,46 @@ VALOR FUTURO*/
 
 -----------------------------
 //Ejercicio #4 Objeto círculo
-/*Realizar un programa que permita crear un molde para objetos de tipo círculo al que le pasamos el radio cuando lo inicialicemos, y que tenga una función 
-que nos calcule su área, otra su longitud, y estos valores sean mostrados por pantalla.*/
+/*Realizar un programa que permita crear un molde para objetos de tipo círculo al que le pasamos el radio cuando lo inicialicemos, 
+y que tenga una función que nos calcule su área, otra su longitud, y estos valores sean mostrados por pantalla.*/
 
 
 
 --------------------------------
 //Ejercicio #5 Identificar llamada
 
-/*Un teléfono celular cuenta con una funcionalidad de identificación de llamadas permitiendo no solo ver qué número nos intenta contactar sino también conocer qué contacto 
-dado de alta en nuestro dispositivo, nos llama.
+/*Un teléfono celular cuenta con una funcionalidad de identificación de llamadas permitiendo no solo ver qué número nos 
+intenta contactar sino también conocer qué contacto dado de alta en nuestro dispositivo, nos llama.
 
-Realizar un programa que imite esta funcionalidad, principalmente que el usuario al ingresar el número de teléfono, el programa reconozca a quien pertenece el mismo*/
+Realizar un programa que imite esta funcionalidad, principalmente que el usuario al ingresar 
+el número de teléfono, el programa reconozca a quien pertenece el mismo*/
 
 
 -----------------------------------
 //Ejercicio #6 Indice de masa corporal
 //Realizar un programa que nos permita calcular el indice de masa corporal de una persona por medio de su peso y altura solicitadas.
 
+function GetIndiceMasa (peso,altura) {
+	this.peso = peso;
+	this.altura = altura;
+	var indiceMasa = peso / (altura * altura);
+	return indiceMasa;
+}
 
 
+var peso = prompt("Introduzca su peso en kg");
+peso = Number(peso);
+var altura = prompt("Introduzca su altura en metros");
+altura = Number(altura);
+var vari = new GetIndiceMasa (peso, altura);
+console.log("Tu indice de masa corporal IMC es " + vari)
 
-----------------------------------
+----------------------------------<<
 //Ejercicio #7 Gasolinera
 /*Realizar un programa que permita simular el funcionamiento de una bomba dispensadora de gasolina. 
-Deberá calcular cuánto pagara un usuario por una cantidad determinada de gasolina; el programa además deberá de guardar la cantidad de litros 
-disponibles en la bomba e irlos actualizando conforme dispensa gasolina, en caso de terminarse deberá mostrar algún mensaje indicándolo al usuario.*/
+Deberá calcular cuánto pagara un usuario por una cantidad determinada de gasolina; el programa además deberá de guardar 
+la cantidad de litros disponibles en la bomba e irlos actualizando conforme dispensa gasolina, en caso de terminarse 
+deberá mostrar algún mensaje indicándolo al usuario.*/
 
 
 //necesitamos el nombre del cliente y los litros que comprará
